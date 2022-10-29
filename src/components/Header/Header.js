@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "./Header.scss";
-import { ReactComponent as HeaderLogo } from "../../assets/Images/logo_nov.svg";
+// import { ReactComponent as HeaderLogo } from "../../assets/Images/logo_nov.svg";
 // import { ReactComponent as IconHelpTelegram } from "../../assets/Images/icon-help-telegram.svg";
 import { ReactComponent as IconHelpTelegram } from "../../assets/Images/icon-telegram.svg";
 

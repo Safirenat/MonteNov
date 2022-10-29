@@ -3,12 +3,22 @@ import "./Main.scss";
 
 import { BackToTopButton } from "../BackToTopButton";
 import { Header } from "../Header/Header";
+import { Pros } from "../Pros/Pros";
+import { Benefits } from "../Benefits/Benefits";
+import { Analiz } from "../Analiz/Analiz";
+import { Documents } from "../Documents/Documents";
+import { Footer } from "../Footer/Footer";
 
 export const Main = () => {
 	return (
 		<div className="App">
 				{/* <img src={logo} className="App-logo" alt="logo" /> */}
                 <Header/>
+                <Pros/>
+                <Benefits/>
+                <Analiz/>
+                <Documents/>
+                <Footer/>
 				<div>
 					Learn React "But I must explain to you how all this mistaken
 					idea of denouncing pleasure and praising pain was born and I

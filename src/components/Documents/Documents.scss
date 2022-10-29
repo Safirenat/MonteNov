@@ -1,0 +1,33 @@
+
+.documents{
+    // padding-top: 50px;
+    // padding-bottom: 50px;
+    padding-block: 100px;
+
+}
+
+.documents-text-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 50px;
+    padding-left: 120px;
+
+}
+
+.documents-text{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex:0 1 277px;
+    img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.documents-title{
+    text-align: center;
+	margin-bottom: 50px;
+}
