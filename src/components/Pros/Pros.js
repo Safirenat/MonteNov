@@ -70,7 +70,10 @@ export const Pros = () => {
 								Европы
 							</p>
 							{/* <img src={BgTest} alt="BgMain" /> */}
+							<div className="color-radius">
+
 							<LowPrice />
+							</div>
 						</div>
 					</div>
 				</div>
