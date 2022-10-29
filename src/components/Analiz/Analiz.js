@@ -13,7 +13,7 @@ export const Analiz = () => {
 	return (
 		<div className="benefits-background">
 			<div className="container">
-				<div className="benefits">
+				<div className="analiz">
 					<p>
 						Получите бесплатный
 						<br /> анализ документов
@@ -21,9 +21,9 @@ export const Analiz = () => {
 						<br /> от опытных
 						<br /> юристов Montenegro Live
 					</p>
-					<div className="header-arrow-wrapper">
+					<div className="analiz-arrow-wrapper">
 						<Arrow />
-						<div className="header-arrow-button">
+						<div className="analiz-arrow-button">
 							<button>Связаться с нами</button>
 						</div>
 					</div>

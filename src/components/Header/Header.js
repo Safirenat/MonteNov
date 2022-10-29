@@ -72,7 +72,7 @@ export const Header = () => {
 				<div className="container">
 					<div className="header-left">
 						<NavLink className="" to="/">
-							ВНЖ Черногория
+							ВНЖ Черногории
 						</NavLink>
 						<NavLink className="" to="/">
 							О нас

@@ -1,0 +1,26 @@
+.icon-up{
+
+	display: flex;
+	align-items: center;
+    opacity: 0.5;
+	position: fixed;
+	// right: 10px;
+    // bottom: 60px;
+	right: 30px;
+    bottom: 60px;
+	padding: 15px 10px 10px;
+    background: #aaa;
+	-webkit-border-radius: 5px;
+    // display: none;
+    cursor: pointer;
+    z-index: 1001;
+
+	&:hover{
+		opacity: 0.3;
+
+	}
+	img{
+        width: 84px;
+        height: 79px;
+	}
+}
