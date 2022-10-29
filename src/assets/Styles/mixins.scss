@@ -1,0 +1,356 @@
+// Media Queries Mixins
+@mixin respond($breakpoint) {
+    @if $breakpoint==laptopL {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==laptopM {
+        @media only screen and (max-width: 838px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==laptop {
+        @media only screen and (max-width: 824px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==tablet {
+        @media only screen and (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==tabletL {
+        @media only screen and (max-width: 540px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==mobileL {
+        @media only screen and (max-width: 425px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==mobile {
+        @media only screen and (max-width: 375px) {
+            @content;
+        }
+    }
+}
+
+// Smooth Transition
+@mixin transition {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+// Typography Mixins
+@mixin tTitle_1 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+@mixin tTitle_1_semibold {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin tTitle_1_bold {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin tTitle_2 {
+    font-size: 24px;
+    line-height: 32px;
+
+    @include respond(tablet) {
+        font-size: 22px;
+    }
+
+    @include respond(mobile) {
+        font-size: 22px;
+    }
+}
+
+@mixin tTitle_2_semibold {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin tTitle_2_medium {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin tTitle_3 {
+    font-size: 18px;
+    line-height: 24px;
+
+    @media only screen and (max-width: 824px) {
+        font-size: 18px;
+    }
+
+    @media only screen and (max-width: 375px) {
+        font-size: 16px;
+    }
+}
+
+@mixin tTitle_3-semibold {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+
+    @media only screen and (max-width: 824px) {
+        font-size: 18px;
+    }
+
+    @media only screen and (max-width: 375px) {
+        font-size: 16px;
+    }
+}
+
+@mixin tTitle_3-medium {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+@mixin tTitle_3-regular {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+@mixin tButton {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@mixin tSubtitle {
+    font-size: 16px;
+    line-height: 24px;
+    color: #252129;
+
+    @media only screen and (max-width: 375px) {
+        font-size: 14px;
+    }
+}
+
+@mixin tSubtitle_Semibold {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin tCaption {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@mixin tCaption_Semibold {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@mixin tTag {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+@mixin text_regular {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+@mixin headline_regular {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+@mixin t_Headline2 {
+    font-family: "TT Commons Pro Expanded";
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.38;
+    letter-spacing: -0.52px;
+    color: var(--PA_Text_Primary);
+
+    @media only screen and (max-width: 824px) {
+        font-size: 24px;
+        line-height: 1.33;
+    }
+
+    @media only screen and (max-width: 375px) {
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+@mixin t_Title_1_Semibold {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.22;
+    letter-spacing: -0.72px;
+
+    @media only screen and (max-width: 824px) {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 1.25;
+        letter-spacing: -0.72px;
+    }
+
+    @media only screen and (max-width: 375px) {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 1.38;
+        letter-spacing: -0.72px;
+    }
+}
+@mixin t_Title_2_Semibold {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33;
+    letter-spacing: -0.44px;
+    color: var(--PA_Text_Primary);
+
+    @media only screen and (max-width: 824px) {
+        font-size: 22px;
+        line-height: 1.45;
+    }
+
+    @media only screen and (max-width: 375px) {
+        font-size: 24px;
+        line-height: 1.33;
+    }
+}
+
+@mixin t_Title_3_Semibold {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+
+    @media only screen and (max-width: 824px) {
+    }
+
+    @media only screen and (max-width: 375px) {
+        font-size: 16px;
+    }
+}
+
+@mixin t_Title_1 {
+    font-size: 36px;
+    line-height: 1.22;
+    letter-spacing: -0.72px;
+}
+
+@mixin t_Title_2_mobile {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.45;
+    letter-spacing: -0.44px;
+
+    @include respond(laptop) {
+        font-size: 22px;
+    }
+    @include respond(tablet) {
+        font-size: 18px;
+    }
+}
+
+@mixin t_Title_3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+
+    color: var(--PA_Text_Placeholder);
+
+    @media only screen and (max-width: 375px) {
+        font-size: 16px;
+    }
+}
+
+@mixin t_Subtitle_Semibold {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.12px;
+}
+
+@mixin t_Subtitle {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.12px;
+
+    @include respond(tablet) {
+        font-size: 14px;
+        line-height: 1.43;
+    }
+}
+
+@mixin t_Button {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.12px;
+}
+
+@mixin t_Caption {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: -0.08px;
+
+    @media only screen and (max-width: 375px) {
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: -0.08 px;
+    }
+}
+
+@mixin t_BurgerSettings {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    color: var(--PA_Text_Primary);
+}
+
+@mixin sElevation_1 {
+    box-shadow: 0px 8px 16px rgba(37, 33, 41, 0.04),
+        0px 0px 6px rgba(37, 33, 41, 0.04);
+}
