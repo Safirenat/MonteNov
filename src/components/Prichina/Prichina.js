@@ -1,20 +1,5 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
 import "./Prichina.scss";
-
-// import { ReactComponent as IconHelpTelegram } from "../../assets/Images/icon-help-telegram.svg";
-// import { ReactComponent as IconHelpWhatsapp } from "../../assets/Images/icon-help-whatsapp.svg";
-// import { ReactComponent as IconHelpMobile } from "../../assets/Images/icon-help-mobile.svg";
-// import { ReactComponent as Plusi } from "../../assets/Images/plusi.svg";
-// import { ReactComponent as EuropeanUnion } from "../../assets/Images/european-union.svg";
-// import { ReactComponent as Family } from "../../assets/Images/family.svg";
-// import { ReactComponent as UnitedStatesOfAmerica } from "../../assets/Images/united-states-of-america.svg";
-// import { ReactComponent as Tax } from "../../assets/Images/tax.svg";
-// import { ReactComponent as DutyFree } from "../../assets/Images/duty-free.svg";
-import { ReactComponent as IconOpit } from "../../assets/Images/icon-opit.svg";
-
-// import BgTest from "../../assets/Images/img-block-two.jpeg";
-// import Plus from "../../assets/Images/plus.jpg";
 
 export const Prichina = () => {
 	return (
@@ -25,7 +10,6 @@ export const Prichina = () => {
 				</h1>
 				<div className="prichina-wrapper">
 					<div className="prichina-img-wrapper">
-						{/* <IconOpit /> */}
 						<div className="prichina-text">
 							<h3 className="prichina-subtitle">
 								Многолетний опыт работы
@@ -38,7 +22,6 @@ export const Prichina = () => {
 						</div>
 					</div>
 					<div className="prichina-img-wrapper">
-						{/* <IconOpit /> */}
 						<div className="prichina-text">
 							<h3 className="prichina-subtitle">
 								{" "}
@@ -53,7 +36,6 @@ export const Prichina = () => {
 						</div>
 					</div>
 					<div className="prichina-img-wrapper">
-						{/* <IconOpit /> */}
 						<div className="prichina-text">
 							<h3 className="prichina-subtitle">
 								Индивидуальный подход и прозрачность

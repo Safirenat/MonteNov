@@ -1,66 +1,103 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import "./Footer.scss";
 
-import { ReactComponent as IconHelpTelegram } from "../../assets/Images/icon-help-telegram.svg";
-import { ReactComponent as IconHelpWhatsapp } from "../../assets/Images/icon-help-whatsapp.svg";
-// import { ReactComponent as IconHelpMobile } from "../../assets/Images/icon-help-mobile.svg";
+import { ReactComponent as IconHelpTelegram } from "../../assets/Images/icon-telegram.svg";
+import { ReactComponent as IconHelpWhatsapp } from "../../assets/Images/icon-whatsapp.svg";
+import { ReactComponent as IconPhone } from "../../assets/Images/phone-icon.svg";
+import { ReactComponent as Logoza } from "../../assets/Images/logoza8.svg";
+import { ReactComponent as Location } from "../../assets/Images/location-icon.svg";
+import { ReactComponent as Clock } from "../../assets/Images/clock-icon.svg";
+import { ReactComponent as Email } from "../../assets/Images/mail-icon.svg";
+import { ReactComponent as Arrow } from "../../assets/Images/arrow4.svg";
 
 export const Footer = () => {
 	return (
-		<div className="footer-background">
-			<div className="container">
-				<div className="footer">
-					{/* <div className="footer__item-wrapper">
-						<NavLink className="footer__item" to="/info">
-							О нас
-						</NavLink>
-						<NavLink className="footer__item" to="/">
-							Каталог
-						</NavLink>
-						<NavLink className="footer__item" to="/">
-							Контакты
-						</NavLink>
-						<NavLink className="footer__item" to="/">
-							Магазины-партнеры
-						</NavLink>
-					</div> */}
-					<div>
-								<div className="header-top-info-location">
-									<a href="https://t.me/MontenegroLive2">
-										{/* <Location /> */}
+		<div className="footer-background" id="contacts">
+			<div className="footer">
+				<div>
+				<div className="analiz">
+					<p>
+						Получите бесплатный
+						<br /> анализ документов
+						<br /> для оформления ВНЖ Черногории
+						<br /> от опытных
+						<br /> юристов Montenegro Live
+					</p>
+					<div className="analiz-arrow-wrapper">
+						<Arrow />
+						<div className="analiz-arrow-button">
+							<a target="_blank" href="https://t.me/MontenegroLive_Bot">
+								Связаться с нами
+							</a>
+						</div>
+					</div>
+				</div>
+
+				</div>
+				<div className="footer-top-info-line">
+					<div className="container">
+						<div className="footer-top-info">
+							<div className="footer-logo">
+								<a href="/">
+									<Logoza />
+								</a>
+							</div>
+							<div className="footer-top-info-location-wrapper">
+								<div className="footer-top-info-location">
+									<a
+										target="_blank"
+										href="https://goo.gl/maps/4utxgoeVmjfo4DD78"
+									>
+										<Location />
 									</a>
-									<p>Herceg-Novi,Podi, bb</p>
+									<a
+										target="_blank"
+										href="https://goo.gl/maps/4utxgoeVmjfo4DD78"
+									>
+										Herceg-Novi,Podi, bb
+									</a>
 								</div>
-								<div className="header-top-info-location">
-									<a href="https://t.me/MontenegroLive2">
-										{/* <Clock /> */}
+								<div className="footer-top-info-location">
+									<a href="#">
+										<Clock />
 									</a>
 									<p>Пн - Пт с 10 до 19</p>
 								</div>
 							</div>
-					<div>
-						<div className="footer__social">
-						<p>+38268380128</p>
+							<div className="footer-top-info-tel-wrapper">
+								<a target="_blank" href="tel:+38268380128">
+									+38268380128
+								</a>
 
-						<p>info@montenegrolive.ru</p>
+								<div className="footer-top-info-icons">
+									<a target="_blank" href="tel:+38268380128">
+										<IconPhone />
+									</a>
 
+									<a
+										target="_blank"
+										href="https://wa.me/738268380128"
+									>
+										<IconHelpWhatsapp />
+									</a>
 
-							{/* <div>
-							<a href="tel:+7 (9950) 07 19 10">
-								<IconHelpMobile />
-							</a>
-						</div> */}
-							{/* <div className="mobaile__social_watsapp">
-								<a href="https://wa.me/79950071910?text=Здравствуйте%2C+у+меня+есть+вопрос">
-									<IconHelpWhatsapp />
+									<a
+										target="_blank"
+										href="https://t.me/738268380128"
+									>
+										<IconHelpTelegram />
+									</a>
+								</div>
+							</div>
+							<div className="footer-top-info-mail">
+								<a href="mailto:info@montenegrolive.ru">
+									<Email />
+								</a>
+								<a href="mailto:info@montenegrolive.ru">
+									info@montenegrolive.ru
 								</a>
 							</div>
-							<div className="mobaile__social_telegram">
-								<a href="https://t.me/SafinRenat">
-									<IconHelpTelegram />
-								</a>
-							</div> */}
 						</div>
 					</div>
 				</div>

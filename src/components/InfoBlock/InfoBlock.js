@@ -1,23 +1,24 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
 import "./InfoBlock.scss";
-
-// import { ReactComponent as IconHelpTelegram } from "../../assets/Images/icon-help-telegram.svg";
-// import { ReactComponent as IconHelpWhatsapp } from "../../assets/Images/icon-help-whatsapp.svg";
-// import { ReactComponent as IconHelpMobile } from "../../assets/Images/icon-help-mobile.svg";
-
-// import BgTest from "../../assets/Images/img-block-two.jpeg";
 
 export const InfoBlock = () => {
 	return (
 		<div className="info-block">
 			<div className="container">
-				<p>
-					Наши специалисты помогут Вам получить ВНЖ в Черногории в<br/>
-					кратчайшие сроки с помощью открытия юридического лица. Мы<br/>
-					готовы сопровождать Вас на всех этапах - от регистрации<br/>
-					фирмы до полного юридического и бухгалтерского<br/>
-					сопровождения.
+				<p className="info-block-text">
+					В условиях современного мира побеждает тот, кто адаптивен и
+					способен быстро менять свои стратегии, и одной из таких
+					стратегий может стать иммиграция. Черногория принадлежит к
+					числу немногих европейских стран, где все еще можно получить
+					ВНЖ без вложения неподъемных сумм и соблюдения длинного
+					списка условий. С поддержкой нашей команды и многолетнего
+					опыта наших специалистов этот процесс пройдет спокойно и
+					понятно, позволяя вам получить от переезда максимум
+					удовольствия. Наши специалисты помогут Вам получить ВНЖ в
+					Черногории в кратчайшие сроки с помощью открытия
+					юридического лица. Наша команда готова сопровождать Вас на
+					всех этапах - от регистрации фирмы до полного юридического и
+					бухгалтерского сопровождения.
 				</p>
 			</div>
 		</div>

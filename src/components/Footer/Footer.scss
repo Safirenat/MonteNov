@@ -1,96 +1,125 @@
 @import "../../assets/Styles/mixins.scss";
 
-.footer-background{
-
+.footer-background {
 	background-image: linear-gradient(
 			to bottom,
 			rgba(146, 187, 235, 0.8),
 			rgba(8, 29, 31, 0.7)
 		),
-		url(../../assets/Images/fon.jpg);
+		url(../../assets/Images/bg-footer.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 
-	color:#fff;
+	color: #fff;
+	padding-bottom: 100px;
 }
 
-.footer {
-	display: grid;
-	grid-template-columns: minmax(100px, 1200px) minmax(100px, 100px);
-
-	padding-top: 40px;
-	padding-bottom: 30px;
-	padding-left: 100px;
-	padding-right: 100px;
-
-	span {
-		margin-bottom: 15px;
-	}
-	@include respond(tablet) {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.footer__item {
-		color: black;
-
-		@include respond(tablet) {
-			margin-bottom: 25px;
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
-	}
+.footer-top-info-line {
+	border-top: 1px solid #ffffff45;
+	padding-top: 15px;
 }
 
-.footer__item-wrapper {
+.footer-top-info {
 	display: flex;
-	column-gap: 140px;
-	@include respond(tablet) {
-		justify-content: center;
-	column-gap: 10px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 10px;
+	color: white;
 
-	}
-}
-
-.footer__social {
-	display: flex;
-	justify-content: end;
-
-	column-gap: 20px;
-
-	@include respond(tablet) {
+	@media (max-width: 920px) {
 		justify-content: center;
 	}
+}
 
-	// svg {
-	// 	width: 24px;
-	// 	height: 24px;
-	// }
+.footer-logo {
+	margin-top: -20px;
 
-	align-items: center;
+	svg {
+		width: 220px;
+		height: 81px;
+	}
+}
 
-	top: 35px;
-	right: 30px;
+.footer-top-info-location-wrapper {
+}
+
+.footer-top-info-location {
+	display: flex;
+
+	gap: 10px;
+	font-size: 22px;
+
 	a {
-		margin-bottom: 10px;
+		text-decoration: none;
+		color: #fff;
+		-webkit-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+
+		&:hover {
+			opacity: 0.5;
+		}
 	}
 
-	.mobaile__social_watsapp{
-		svg {
-			width: 28px;
-			height: 28px;
-		}
+	svg {
+		margin-top: 8px;
 
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.footer-top-info-tel-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	font-size: 22px;
+
+	a {
+		cursor: pointer;
+		-webkit-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+
+		text-decoration: none;
+		color: #fff;
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+}
+
+.footer-top-info-icons {
+	display: flex;
+	gap: 20px;
+	padding-left: 6px;
+	margin: 0 auto;
+
+	svg {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.footer-top-info-mail {
+	display: flex;
+
+	gap: 10px;
+	font-size: 22px;
+
+	a {
+		text-decoration: none;
+		color: white;
+		-webkit-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+
+		&:hover {
+			opacity: 0.5;
+		}
 	}
 
-	.mobaile__social_telegram{
-		svg {
-			width: 24px;
-			height: 24px;
-		}
-
+	svg {
+		margin-top: 7px;
+		width: 20px;
+		height: 20px;
 	}
 }

@@ -1,4 +1,24 @@
-.info-block{
-    padding-block: 100px;
-    text-align: center;
+.info-block {
+	padding-block: 100px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	max-width: 1197px;
+	margin: 0 auto;
+	@media (max-width: 1024px) {
+		padding-block: 50px;
+		text-align: start;
+	}
+
+	@media (max-width: 550px) {
+		padding-inline: 10px;
+	}
+}
+
+.info-block-text {
+	line-height: 2;
+
+	@media (max-width: 1024px) {
+		font-size: 14px;
+	}
 }

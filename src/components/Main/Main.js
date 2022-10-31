@@ -1,6 +1,9 @@
 // import logo from "./logo.svg";
 import "./Main.scss";
 
+import "swiper/css/bundle";
+import "../Reviews/Reviews.scss";
+
 import { BackToTopButton } from "../BackToTopButton";
 import { Header } from "../Header/Header";
 import { InfoBlock } from "../InfoBlock/InfoBlock";
@@ -11,11 +14,11 @@ import { Documents } from "../Documents/Documents";
 import { Footer } from "../Footer/Footer";
 import { Etaps } from "../Etaps/Etaps";
 import { Prichina } from "../Prichina/Prichina";
+import { Reviews } from "../Reviews/Reviews";
 
 export const Main = () => {
 	return (
 		<div className="App">
-			{/* <img src={logo} className="App-logo" alt="logo" /> */}
 			<Header />
             <InfoBlock/>
 			<Pros />
@@ -24,7 +27,8 @@ export const Main = () => {
 			<Documents />
 			<Etaps />
 			<Prichina />
-			{/* <Footer /> */}
+			<Reviews />
+			<Footer />
 			<BackToTopButton />
 		</div>
 	);

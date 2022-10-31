@@ -1,20 +1,6 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
 import "./Etaps.scss";
 
-// import { ReactComponent as IconHelpTelegram } from "../../assets/Images/icon-help-telegram.svg";
-// import { ReactComponent as IconHelpWhatsapp } from "../../assets/Images/icon-help-whatsapp.svg";
-// import { ReactComponent as IconHelpMobile } from "../../assets/Images/icon-help-mobile.svg";
-// import { ReactComponent as Plusi } from "../../assets/Images/plusi.svg";
-// import { ReactComponent as EuropeanUnion } from "../../assets/Images/european-union.svg";
-// import { ReactComponent as Family } from "../../assets/Images/family.svg";
-// import { ReactComponent as UnitedStatesOfAmerica } from "../../assets/Images/united-states-of-america.svg";
-// import { ReactComponent as Tax } from "../../assets/Images/tax.svg";
-// import { ReactComponent as DutyFree } from "../../assets/Images/duty-free.svg";
-// import { ReactComponent as LowPrice } from "../../assets/Images/low-price.svg";
-
-// import BgTest from "../../assets/Images/img-block-two.jpeg";
-// import Plus from "../../assets/Images/plus.jpg";
 
 export const Etaps = () => {
 	return (

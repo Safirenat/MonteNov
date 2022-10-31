@@ -1,16 +1,29 @@
 .prichina {
 	padding-block: 100px;
+	@media (max-width: 1024px) {
+		padding-block: 50px;
+	}
+	@media (max-width: 550px) {
+		padding-inline: 15px;
+	}
 }
 
 .prichina-wrapper {
 	display: flex;
 	flex-direction: column;
 	gap: 80px;
+
+	@media (max-width: 900px) {
+		gap: 40px;
+	}
 }
 
 .prichina-title {
 	text-align: center;
 	margin-bottom: 50px;
+	@media (max-width: 1024px) {
+		font-size: 20px;
+	}
 }
 
 .prichina-img-wrapper {
@@ -28,8 +41,15 @@
 .prichina-text {
 	max-width: 600px;
 	text-align: center;
+	line-height: 1.4;
+	@media (max-width: 1024px) {
+		font-size: 13px;
+	}
 }
 
 .prichina-subtitle {
 	margin-bottom: 20px;
+	@media (max-width: 1024px) {
+		font-size: 16px;
+	}
 }
