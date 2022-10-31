@@ -29,57 +29,65 @@ export const Header = () => {
 					<div className="container">
 						<div className="header-top-info">
 							<div className="header-logo">
-								<Logoza />
-								{/* <img src={BgTest} alt="BgMain" /> */}
+								<a href="/">
+									<Logoza />
+								</a>
 							</div>
 							<div>
 								<div className="header-top-info-location">
-									<a href="https://t.me/MontenegroLive2">
+									<a target="_blank" href="https://goo.gl/maps/4utxgoeVmjfo4DD78">
 										<Location />
 									</a>
-									<p>Herceg-Novi,Podi, bb</p>
+									<a target="_blank" href="https://goo.gl/maps/4utxgoeVmjfo4DD78">
+										Herceg-Novi,Podi, bb
+									</a>
 								</div>
 								<div className="header-top-info-location">
-									<a href="https://t.me/MontenegroLive2">
+									<a href="#">
 										<Clock />
 									</a>
 									<p>Пн - Пт с 10 до 19</p>
 								</div>
 							</div>
 							<div className="header-top-info-tel-wrapper">
-								<p>+38268380128</p>
+								<a target="_blank" href="tel:+38268380128">+38268380128</a>
+
 								<div className="header-top-info-icons">
-									<a href="https://t.me/MontenegroLive2">
+									<a target="_blank" href="tel:+38268380128">
 										<IconPhone />
 									</a>
-									<a href="https://t.me/MontenegroLive2">
+
+									<a target="_blank" href="https://wa.me/738268380128">
 										<IconHelpWhatsapp />
 									</a>
-									<a href="https://t.me/MontenegroLive2">
+
+									<a target="_blank" href="https://t.me/738268380128">
 										<IconHelpTelegram />
 									</a>
 								</div>
 							</div>
 							<div className="header-top-info-mail">
-								<a href="https://t.me/MontenegroLive2">
+								<a href="mailto:info@montenegrolive.ru">
 									<Email />
 								</a>
-								<p>info@montenegrolive.ru</p>
+								<a href="mailto:info@montenegrolive.ru">
+									info@montenegrolive.ru
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div className="container">
 					<div className="header-left">
-						<NavLink className="" to="/">
+						<a className="" href="#pros">
 							ВНЖ Черногории
-						</NavLink>
-						<NavLink className="" to="/">
+						</a>
+						<a className="" href="#prichina">
 							О нас
-						</NavLink>
-						<NavLink className="" to="/">
+						</a>
+						<a className="" href="#documents">
 							Документы
-						</NavLink>
+						</a>
 						<NavLink className="" to="/">
 							Контакты
 						</NavLink>
@@ -107,7 +115,9 @@ export const Header = () => {
 						<div className="header-arrow-wrapper">
 							<Arrow />
 							<div className="header-arrow-button">
-								<button>Связаться с нами</button>
+								<a target="_blank" href="https://t.me/MontenegroLive_Bot">
+									Связаться с нами
+								</a>
 							</div>
 						</div>
 					</div>

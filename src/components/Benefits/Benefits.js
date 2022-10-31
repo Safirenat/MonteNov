@@ -13,7 +13,7 @@ export const Benefits = () => {
 	return (
 		<div className="benefits">
 			<div className="container">
-				<h1 className="benefits-title">Преимущества</h1>
+				<h1 className="benefits-title">Преимущества ВНЖ через открытие юридического лица</h1>
 
 				<div className="benefits-text-wrapper">
 					<div className="benefits-text">

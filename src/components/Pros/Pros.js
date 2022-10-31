@@ -18,7 +18,7 @@ import Plus from "../../assets/Images/plus.jpg";
 
 export const Pros = () => {
 	return (
-		<div className="pros-background">
+		<div className="pros-background" id="pros">
 			<div className="container">
 				<h1 className="pros-title">Чем популярна Черногория для иммигрантов</h1>
 				<div className="pros">

@@ -9,6 +9,8 @@ import { Benefits } from "../Benefits/Benefits";
 import { Analiz } from "../Analiz/Analiz";
 import { Documents } from "../Documents/Documents";
 import { Footer } from "../Footer/Footer";
+import { Etaps } from "../Etaps/Etaps";
+import { Prichina } from "../Prichina/Prichina";
 
 export const Main = () => {
 	return (
@@ -20,7 +22,9 @@ export const Main = () => {
 			<Benefits />
 			<Analiz />
 			<Documents />
-			<Footer />
+			<Etaps />
+			<Prichina />
+			{/* <Footer /> */}
 			<BackToTopButton />
 		</div>
 	);

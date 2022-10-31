@@ -12,7 +12,7 @@ import BgTest from "../../assets/Images/img-block-two.jpeg";
 
 export const Documents = () => {
 	return (
-		<div className="documents">
+		<div className="documents" id="documents">
 			<div className="container">
 				<div>
 					<h1 className="documents-title">
