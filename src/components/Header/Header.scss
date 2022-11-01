@@ -345,7 +345,7 @@ svg #wheel {
 	cursor: pointer;
 	z-index: 1001;
 
-	@media (max-width: 900px) {
+	@media (max-width: 1024px) {
 		right: 10px;
 		bottom: 100px;
 	}
@@ -357,7 +357,7 @@ svg #wheel {
 		width: 84px;
 		height: 79px;
 
-		@media (max-width: 900px) {
+		@media (max-width: 1024px) {
 			width: 44px;
 			height: 39px;
 		}

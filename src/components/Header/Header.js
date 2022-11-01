@@ -42,7 +42,7 @@ export const Header = () => {
 									<a href="#">
 										<Clock />
 									</a>
-									<p>Пн - Пт с 10 до 19</p>
+									<p>Пн - Сб с 8 до 17</p>
 								</div>
 							</div>
 							<div className="header-top-info-tel-wrapper">
@@ -119,11 +119,11 @@ export const Header = () => {
 						</div>
 					</div>
 				</div>
-				<div className="telegram-footer">
+				{/* <div className="telegram-footer">
 					<a target="_blank" href="https://t.me/MontenegroLive_Bot">
 						<TelegramFooter />
 					</a>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

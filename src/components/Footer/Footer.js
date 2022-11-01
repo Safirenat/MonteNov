@@ -64,7 +64,7 @@ export const Footer = () => {
 									<a href="#">
 										<Clock />
 									</a>
-									<p>Пн - Пт с 10 до 19</p>
+									<p>Пн - Сб с 8 до 17</p>
 								</div>
 							</div>
 							<div className="footer-top-info-tel-wrapper">
@@ -103,7 +103,8 @@ export const Footer = () => {
 						</div>
 						<div>
 							<p className="footer-copyright">
-								Copyright © «Montenegro Live» 2022. All rights reserved.
+								Copyright © «Montenegro Live» 2022. All rights
+								reserved.
 							</p>
 						</div>
 					</div>
