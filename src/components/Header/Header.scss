@@ -330,3 +330,36 @@ svg #wheel {
 
 	cursor: pointer;
 }
+
+
+.telegram-footer{
+	display: flex;
+	align-items: center;
+	opacity: 0.5;
+	position: fixed;
+	right: 30px;
+	bottom: 190px;
+	padding: 15px 10px 10px;
+	background: #aaa;
+	-webkit-border-radius: 5px;
+	cursor: pointer;
+	z-index: 1001;
+
+	@media (max-width: 900px) {
+		right: 10px;
+		bottom: 100px;
+	}
+
+	&:hover {
+		opacity: 0.3;
+	}
+	svg {
+		width: 84px;
+		height: 79px;
+
+		@media (max-width: 900px) {
+			width: 44px;
+			height: 39px;
+		}
+	}
+}

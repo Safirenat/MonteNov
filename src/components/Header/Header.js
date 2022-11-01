@@ -9,6 +9,7 @@ import { ReactComponent as Location } from "../../assets/Images/location-icon.sv
 import { ReactComponent as Clock } from "../../assets/Images/clock-icon.svg";
 import { ReactComponent as Email } from "../../assets/Images/mail-icon.svg";
 import { ReactComponent as Arrow } from "../../assets/Images/arrow4.svg";
+import { ReactComponent as TelegramFooter } from "../../assets/Images/telegram-footer.svg";
 
 export const Header = () => {
 	return (
@@ -117,6 +118,11 @@ export const Header = () => {
 							</div>
 						</div>
 					</div>
+				</div>
+				<div className="telegram-footer">
+					<a target="_blank" href="https://t.me/MontenegroLive_Bot">
+						<TelegramFooter />
+					</a>
 				</div>
 			</div>
 		</div>

@@ -16,24 +16,26 @@ export const Footer = () => {
 		<div className="footer-background" id="contacts">
 			<div className="footer">
 				<div>
-				<div className="analiz">
-					<p>
-						Получите бесплатный
-						<br /> анализ документов
-						<br /> для оформления ВНЖ Черногории
-						<br /> от опытных
-						<br /> юристов Montenegro Live
-					</p>
-					<div className="analiz-arrow-wrapper">
-						<Arrow />
-						<div className="analiz-arrow-button">
-							<a target="_blank" href="https://t.me/MontenegroLive_Bot">
-								Связаться с нами
-							</a>
+					<div className="analiz">
+						<p>
+							Получите бесплатный
+							<br /> анализ документов
+							<br /> для оформления ВНЖ Черногории
+							<br /> от опытных
+							<br /> юристов Montenegro Live
+						</p>
+						<div className="analiz-arrow-wrapper">
+							<Arrow />
+							<div className="analiz-arrow-button">
+								<a
+									target="_blank"
+									href="https://t.me/MontenegroLive_Bot"
+								>
+									Связаться с нами
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-
 				</div>
 				<div className="footer-top-info-line">
 					<div className="container">
@@ -98,6 +100,11 @@ export const Footer = () => {
 									info@montenegrolive.ru
 								</a>
 							</div>
+						</div>
+						<div>
+							<p className="footer-copyright">
+								Copyright © «Montenegro Live» 2022. All rights reserved.
+							</p>
 						</div>
 					</div>
 				</div>
