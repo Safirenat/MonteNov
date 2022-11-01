@@ -35,7 +35,7 @@ export const Header = () => {
 										target="_blank"
 										href="https://goo.gl/maps/4utxgoeVmjfo4DD78"
 									>
-										Herceg-Novi,Podi, bb
+										Herceg-Novi, Podi, bb
 									</a>
 								</div>
 								<div className="header-top-info-location">
@@ -46,25 +46,25 @@ export const Header = () => {
 								</div>
 							</div>
 							<div className="header-top-info-tel-wrapper">
-								<a target="_blank" href="tel:+38268380128">
-									+38268380128
+								<a target="_blank" href="tel:+38268338309">
+									+38268338309
 								</a>
 
 								<div className="header-top-info-icons">
-									<a target="_blank" href="tel:+38268380128">
+									<a target="_blank" href="tel:+38268338309">
 										<IconPhone />
 									</a>
 
 									<a
 										target="_blank"
-										href="https://wa.me/738268380128"
+										href="https://wa.me/+38268338309"
 									>
 										<IconHelpWhatsapp />
 									</a>
 
 									<a
 										target="_blank"
-										href="https://t.me/738268380128"
+										href="https://t.me/+38268338309"
 									>
 										<IconHelpTelegram />
 									</a>
