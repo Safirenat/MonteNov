@@ -69,7 +69,15 @@
 	}
 	@media (max-width: 411px) {
 		flex-direction: column;
-		max-width: 150px;
+		max-width: 260px;
+	}
+	@media (max-width: 365px) {
+		flex-direction: column;
+		max-width: 230px;
+	}
+	@media (max-width: 336px) {
+		flex-direction: column;
+		max-width: 220px;
 	}
 }
 
