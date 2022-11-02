@@ -33,7 +33,7 @@ export const BackToTopButton = () => {
 					<div className="telegram-footer">
 						<a
 							target="_blank"
-							href="https://t.me/MontenegroLive_Bot"
+							href="https://t.me/+38268338309"
 						>
 							<TelegramFooter />
 						</a>

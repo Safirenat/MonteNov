@@ -24,22 +24,29 @@ export const Analiz = () => {
 
 	const onSubmit = (e) => {
 		e.preventDefault();
-		send("service_uf2cf4l", "template_hs0jgnl", toSend, "EvYP0dyKm3TeaCoHE")
+		send("service_exbz4dg", "template_qe62u6w", toSend, "EGF04yEuv7MdmYIlB")
 			.then((response) => {
 				console.log("SUCCESS!", response.status, response.text);
+				window.location.reload()
 			})
+
 			.catch((err) => {
 				console.log("FAILED...", err);
 			});
+
 	};
 
-	// const show = (type) => {
-	// 	notification({
-	// 		// className:"notification-title",
-	// 		title: "Успешно",
-	// 		message: `Успешно отправлено`,
-	// 	});
-	// };
+	// const cancelCourse = () => { 
+	// 	document.getElementById("create-course-form").reset();
+	//   }
+
+	const show = (type) => {
+		notification({
+			// className:"notification-title",
+			title: "Успешно",
+			message: `Успешно отправлено`,
+		});
+	};
 
 	const handleChange = (e) => {
 		setToSend({ ...toSend, [e.target.name]: e.target.value });
@@ -51,10 +58,14 @@ export const Analiz = () => {
 	// 	}
 	// };
 
+	// const reloadPage = () => {
+	// 	window.location.reload()
+	//   }
+
 	return (
 		<div className="benefits-background">
 			<div className="container">
-				<div className="form-nov">
+				{/* <div className="form-nov">
 					<Container style={{ width: "500px" }}>
 						<h1 className="text-center">Contact us</h1>
 						<Form onSubmit={onSubmit}>
@@ -92,16 +103,16 @@ export const Analiz = () => {
 									onChange={handleChange}
 								></Form.Check>
 							</Form.Group>
-							<Button variant="primary" type="submit">
+							<Button   variant="primary" type="submit" onClick={reloadPage}>
 								Submit
 							</Button>
 						</Form>
 					</Container>
-				</div>
+				</div> */}
 
 				{/* dkhgd */}
-				{/* <div className="input-wrapper-form">
-					<form onSubmit={onSubmit}>
+				<div className="input-wrapper-form">
+					{/* <form onSubmit={onSubmit}>
 						<input
 							type="text"
 							name="from_name"
@@ -131,7 +142,7 @@ export const Analiz = () => {
 							onChange={handleChange}
 						/>
 						<button type="submit">Submit</button>
-					</form>
+					</form> */}
 					<form onSubmit={onSubmit} className="form-wrapper">
 						<div className="input-text-wrapper">
 							<div>
@@ -154,20 +165,20 @@ export const Analiz = () => {
 									inputProps={{
 										name: "phone",
 										required: true,
-										autoFocus: true,
+										// autoFocus: true,
 										autoFormat: true,
 									}}
-									onKeyDown={(e) => enterHandler(e)}
+									// onKeyDown={(e) => enterHandler(e)}
 								/>
 							</div>
 						</div>
 
-						<button  type="submit">
+						{/* <button  type="submit"> */}
 						<button onClick={() => show("success")} type="submit">
 							Связаться с нами!
 						</button>
-					</form>
-				</div> */}
+					</form> 
+				</div>
 
 				<div className="input-wrapper-form-mobile">
 					<div className="analiz">
