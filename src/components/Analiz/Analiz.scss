@@ -43,6 +43,13 @@
 		padding-bottom: 50px;
 	}
 
+	p{
+		margin-top: -90px;
+		@media (max-width: 960px){
+			margin-top: 0;
+		}
+	}
+
 	svg {
 		width: 132px;
 		height: 120px;
@@ -95,6 +102,10 @@
 	}
 }
 
+.input-wrapper-form-desktop{
+	margin-top: -120px !important;
+}
+
 .analiz-desktop{
 	@media (max-width: 960px){
 		display: none;
@@ -121,7 +132,7 @@
 	}
 
 	svg{
-		padding-top: 84px;
+		// padding-top: 84px;
 	}
 }
 

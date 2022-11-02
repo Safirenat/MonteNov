@@ -135,3 +135,20 @@
 		margin-top: 30px;
 	}
 }
+
+.footer-desktop-form{
+	display: flex;
+	padding-inline:10px ;
+
+	@media (max-width: 960px){
+		display: none;
+	}
+}
+
+.footer-mobile-form{
+	display: none;
+	
+	@media (max-width: 960px){
+		display: flex;
+	}
+}

@@ -1,6 +1,15 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import "./Header.scss";
+import { useState } from "react";
+
+import { notification } from "antd-notifications-messages";
+
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+import "antd-notifications-messages/lib/styles/style.css";
+import { send } from "emailjs-com";
+
 import { ReactComponent as IconHelpTelegram } from "../../assets/Images/icon-telegram.svg";
 import { ReactComponent as IconHelpWhatsapp } from "../../assets/Images/icon-whatsapp.svg";
 import { ReactComponent as IconPhone } from "../../assets/Images/phone-icon.svg";
@@ -9,9 +18,40 @@ import { ReactComponent as Location } from "../../assets/Images/location-icon.sv
 import { ReactComponent as Clock } from "../../assets/Images/clock-icon.svg";
 import { ReactComponent as Email } from "../../assets/Images/mail-icon.svg";
 import { ReactComponent as Arrow } from "../../assets/Images/arrow4.svg";
-import { ReactComponent as TelegramFooter } from "../../assets/Images/telegram-footer.svg";
+// import { ReactComponent as TelegramFooter } from "../../assets/Images/telegram-footer.svg";
 
 export const Header = () => {
+
+	const [toSend, setToSend] = useState({
+		from_name: "",
+		to_name: "",
+		message: "",
+		reply_to: "",
+	});
+
+	const onSubmit = (e) => {
+		e.preventDefault();
+		send("service_exbz4dg5", "template_qe62u6w", toSend, "EGF04yEuv7MdmYIlB")
+			.then((response) => {
+				console.log("SUCCESS!", response.status, response.text);
+				window.location.reload();
+			})
+
+			.catch((err) => {
+				console.log("FAILED...", err);
+			});
+	};
+
+	const show = (type) => {
+		notification({
+			title: "Успешно",
+			message: `Успешно отправлено`,
+		});
+	};
+
+	const handleChange = (e) => {
+		setToSend({ ...toSend, [e.target.name]: e.target.value });
+	};
 	return (
 		<div className="global-container">
 			<div className="header">
@@ -118,12 +158,57 @@ export const Header = () => {
 							</div>
 						</div>
 					</div>
+					<div className="header-bot header-bot-desktop">
+						<p>
+							ВНЖ Черногории за 30 дней
+							<br /> с полным юридическим
+							<br /> сопровождением.
+							<br /> Узнайте, как получить
+						</p>
+						<div className="header-arrow-wrapper header-arrow-wrapper-desktop">
+							<Arrow />
+							<div className="input-wrapper-form ">
+							<form onSubmit={onSubmit} className="form-wrapper">
+								<div className="input-text-wrapper">
+									<div>
+										<input
+											type="text"
+											name="message"
+											placeholder="Your Name"
+											value={toSend.message}
+											onChange={handleChange}
+											className="input-mail"
+										/>
+									</div>
+
+									<div>
+										<PhoneInput
+											enableAreaCodeStretch
+											containerClass="container__input"
+											inputClass="input__field"
+											placeholder="+1 (102) 123-4567"
+											inputProps={{
+												name: "phone",
+												required: true,
+												// autoFocus: true,
+												autoFormat: true,
+											}}
+											// onKeyDown={(e) => enterHandler(e)}
+										/>
+									</div>
+								</div>
+
+								<button
+									onClick={() => show("success")}
+									type="submit"
+								>
+									Связаться с нами!
+								</button>
+							</form>
+						</div>
+						</div>
+					</div>
 				</div>
-				{/* <div className="telegram-footer">
-					<a target="_blank" href="https://t.me/MontenegroLive_Bot">
-						<TelegramFooter />
-					</a>
-				</div> */}
 			</div>
 		</div>
 	);
