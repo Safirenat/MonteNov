@@ -3,16 +3,11 @@ import { useState } from "react";
 import "./Analiz.scss";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-// import { Form, Button, Container } from "react-bootstrap";
-
-// import emailjs from '@emailjs/browser';
 import { notification } from "antd-notifications-messages";
 import "antd-notifications-messages/lib/styles/style.css";
 import { send } from "emailjs-com";
-// import InputMask from "react-input-mask";
 
 import { ReactComponent as Arrow } from "../../assets/Images/arrow4.svg";
-// import { Form } from "react-router-dom";
 
 export const Analiz = () => {
 	const [toSend, setToSend] = useState({

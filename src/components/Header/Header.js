@@ -31,7 +31,7 @@ export const Header = () => {
 
 	const onSubmit = (e) => {
 		e.preventDefault();
-		send("service_exbz4dg5", "template_qe62u6w", toSend, "EGF04yEuv7MdmYIlB")
+		send("service_exbz4dg", "template_qe62u6w", toSend, "EGF04yEuv7MdmYIlB")
 			.then((response) => {
 				console.log("SUCCESS!", response.status, response.text);
 				window.location.reload();
@@ -47,10 +47,13 @@ export const Header = () => {
 			title: "Успешно",
 			message: `Успешно отправлено`,
 		});
+
+
 	};
 
 	const handleChange = (e) => {
 		setToSend({ ...toSend, [e.target.name]: e.target.value });
+
 	};
 	return (
 		<div className="global-container">
