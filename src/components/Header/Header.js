@@ -111,7 +111,7 @@ export const Header = () => {
 							<div className="header-arrow-button">
 								<a
 									target="_blank"
-									href="https://t.me/MontenegroLive_Bot"
+									href="https://t.me/+38268338309"
 								>
 									Связаться с нами
 								</a>
