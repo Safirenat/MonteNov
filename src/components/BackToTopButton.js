@@ -1,8 +1,5 @@
-// import React from "react";
 import React, { useState, useEffect } from "react";
 
-// import "../../App.scss";
-// import "./Main.scss";
 import BgUp from "../assets/Images/up.png";
 import { ReactComponent as TelegramFooter } from "../assets/Images/telegram-footer.svg";
 
@@ -22,7 +19,7 @@ export const BackToTopButton = () => {
 	const scrollUp = () => {
 		window.scrollTo({
 			top: 0,
-			behavior: "auto",
+			behavior: "smooth",
 		});
 	};
 
@@ -31,10 +28,7 @@ export const BackToTopButton = () => {
 			{backToTopButton && (
 				<div>
 					<div className="telegram-footer">
-						<a
-							target="_blank"
-							href="https://t.me/+38268338309"
-						>
+						<a target="_blank" href="https://t.me/+38268338309">
 							<TelegramFooter />
 						</a>
 					</div>

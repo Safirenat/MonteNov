@@ -32,15 +32,26 @@
 		font-size: 30px;
 		margin-bottom: 50px;
 	}
-	@media (max-width: 830px) {
-		font-size: 20px;
-		margin-bottom: 50px;
-	}
-	@media (max-width: 550px) {
-		display: flex;
-		flex-direction: column;
+	// @media (max-width: 830px) {
+	// 	font-size: 20px;
+	// 	margin-bottom: 50px;
+	// }
+	// @media (max-width: 550px) {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	padding-top: 50px;
+	// 	padding-bottom: 50px;
+	// }
+
+	@media (max-width: 960px) {
+		// padding-top: 190px;
 		padding-top: 50px;
-		padding-bottom: 50px;
+		flex-direction: column;
+		text-align: center;
+		
+		svg{
+			display: none;
+		}
 	}
 
 	p {
@@ -107,9 +118,9 @@
 }
 
 .analiz-desktop {
-	@media (max-width: 960px) {
-		display: none;
-	}
+	// @media (max-width: 960px) {
+	// 	display: none;
+	// }
 }
 
 .analiz-arrow-wrapper {
@@ -120,6 +131,14 @@
 	@media (max-width: 550px) {
 		padding-top: 20px;
 	}
+
+	@media (max-width: 960px) {
+		padding-top: 190px;
+		
+		svg{
+			display: none;
+		}
+	}
 }
 
 .analiz-desktop-arrow-wrapper {
@@ -128,6 +147,15 @@
 	gap: 20px;
 	@media (max-width: 550px) {
 		padding-top: 20px;
+	}
+
+	@media (max-width: 960px) {
+		padding-top: 190px;
+		// flex-direction: column;
+		
+		svg{
+			display: none;
+		}
 	}
 
 	svg {
@@ -149,11 +177,8 @@
 
 	&.invalid-number {
 		border: none;
-		// border: 1px solid blue;
-		// border-color: red;
 		box-shadow: none;
-		// box-shadow: none;
-		// background-color: blue;
+
 		&:hover,
 		&:active,
 		&:focus {
@@ -205,9 +230,9 @@
 	margin: 0 auto;
 	max-width: 900px;
 
-	@media (max-width: 961px) {
-		display: none;
-	}
+	// @media (max-width: 961px) {
+	// 	display: none;
+	// }
 
 	button {
 		max-width: 340px;
@@ -237,7 +262,8 @@
 	letter-spacing: 0.01rem;
 	margin-top: 0 !important;
 	margin-bottom: 0 !important;
-	padding-left: 48px;
+	// padding-left: 48px;
+	padding-left: 10px;
 	margin-left: 0;
 	background: #ffffff;
 	border: 1px solid #cacaca;
@@ -252,11 +278,24 @@
 	display: flex;
 	flex-direction: column;
 
-	gap: 40px;
+	gap: 20px;
 
 	input {
 		height: 40px;
-		width: 200px;
+		width: 238px;
+
+		font-family: system-ui;
+	}
+
+	textarea{
+		height: 50px;
+		width: 230px;
+		padding: 10px;
+		outline: none;
+		border-radius: 5px;
+		font-size: 14px;
+		font-family: system-ui;
+		resize: none;
 	}
 }
 

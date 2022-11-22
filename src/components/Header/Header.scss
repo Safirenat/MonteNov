@@ -13,10 +13,6 @@
 			rgba(8, 29, 31, 0.7)
 		),
 		url(../../assets/Images/fon.jpg);
-
-	@include respond(tablet) {
-		// display: none;
-	}
 }
 
 .header-logo {
@@ -35,18 +31,14 @@
 	}
 }
 
-.header-arrow-wrapper-desktop{
-	svg{
+.header-arrow-wrapper-desktop {
+	svg {
 		padding-top: 110px;
 	}
-
-	
 }
 
-.header-bot-desktop-p{
+.header-bot-desktop-p {
 	margin-top: -110px !important;
-	color:red !important;
-
 }
 
 .header-top-info {
@@ -213,7 +205,7 @@
 		font-size: 30px;
 	}
 
-	@media (max-width: 960px){
+	@media (max-width: 960px) {
 		display: flex;
 		font-size: 23px;
 	}
@@ -273,22 +265,27 @@
 			font-size: 12px;
 		}
 
-		@media (max-width: 550px){
+		@media (max-width: 550px) {
 			max-width: 66px;
 			max-height: 42px;
 			padding: 26px;
 			font-size: 12px;
-
 		}
 	}
 }
 
 .header-arrow-wrapper {
-	padding-top: 80px;
+	padding-top: 40px;
 	display: flex;
 	gap: 8px;
-	@media (max-width: 550px){
-		padding-top: 30px;
+	// @media (max-width: 550px) {
+	// 	padding-top: 30px;
+	// }
+
+	@media (max-width: 960px) {
+		svg {
+			display: none;
+		}
 	}
 }
 
@@ -336,15 +333,6 @@ svg #wheel {
 	animation: scroll ease 2s infinite;
 }
 
-// Default stuff.
-// *,
-// *::before,
-// *::after {
-//     box-sizing: border-box;
-//     -webkit-backface-visibility: hidden;
-//     -webkit-transform-style: preserve-3d;
-// }
-
 .header-scroll {
 	max-width: 10px;
 	padding-left: 300px;
@@ -352,8 +340,7 @@ svg #wheel {
 	cursor: pointer;
 }
 
-
-.telegram-footer{
+.telegram-footer {
 	display: flex;
 	align-items: center;
 	opacity: 0.5;
@@ -385,15 +372,24 @@ svg #wheel {
 	}
 }
 
-.header-bot-desktop{
+.header-bot-desktop {
 	display: flex;
-	@media (max-width: 960px){
-		display: none;
+	// @media (max-width: 960px) {
+	// 	display: none;
+	// }
+
+	@media (max-width: 960px) {
+		padding-top: 150px;
+		flex-direction: column;
 	}
 
-	p{
+	@media (max-width: 550px) {
+		text-align: center;
+		padding-top: 200px;
+		flex-direction: column;
+	}
+
+	p {
 		margin-top: -200px;
 	}
-
 }
-

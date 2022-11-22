@@ -60,16 +60,29 @@ export const Analiz = () => {
 									<div>
 										<input
 											type="text"
-											name="message"
-											placeholder="Your Name"
-											value={toSend.message}
+											name="to_name"
+											// placeholder="Your Name"
+											placeholder="Введите имя"
+
+											value={toSend.to_name}
 											onChange={handleChange}
 											className="input-mail"
 										/>
 									</div>
 
 									<div>
-										<PhoneInput
+									<input
+											type="number"
+											name="message"
+											// placeholder="+1 (102) 123-4567"
+											placeholder="Введите номер телефона"
+
+
+											value={toSend.message}
+											onChange={handleChange}
+											className="input-mail"
+										/>
+										{/* <PhoneInput
 											enableAreaCodeStretch
 											containerClass="container__input"
 											inputClass="input__field"
@@ -77,11 +90,9 @@ export const Analiz = () => {
 											inputProps={{
 												name: "phone",
 												required: true,
-												// autoFocus: true,
 												autoFormat: true,
 											}}
-											// onKeyDown={(e) => enterHandler(e)}
-										/>
+										/> */}
 									</div>
 								</div>
 
@@ -89,7 +100,7 @@ export const Analiz = () => {
 									onClick={() => show("success")}
 									type="submit"
 								>
-									Связаться с нами!
+									Задать вопрос
 								</button>
 							</form>
 						</div>
@@ -97,7 +108,7 @@ export const Analiz = () => {
 				</div>
 
 				<div className="input-wrapper-form-mobile">
-					<div className="analiz">
+					{/* <div className="analiz">
 						<p>
 							Получите бесплатный
 							<br /> анализ документов
@@ -116,7 +127,7 @@ export const Analiz = () => {
 								</a>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>

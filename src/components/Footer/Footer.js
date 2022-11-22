@@ -1,17 +1,19 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
 import "./Footer.scss";
 import { useState } from "react";
 
-import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { notification } from "antd-notifications-messages";
 import "antd-notifications-messages/lib/styles/style.css";
 import { send } from "emailjs-com";
 
-import { ReactComponent as IconHelpTelegram } from "../../assets/Images/icon-telegram.svg";
-import { ReactComponent as IconHelpWhatsapp } from "../../assets/Images/icon-whatsapp.svg";
-import { ReactComponent as IconPhone } from "../../assets/Images/phone-icon.svg";
+// import { ReactComponent as IconHelpTelegram } from "../../assets/Images/icon-telegram.svg";
+// import { ReactComponent as IconHelpWhatsapp } from "../../assets/Images/icon-whatsapp.svg";
+// import { ReactComponent as IconPhone } from "../../assets/Images/phone-icon.svg";
+import { ReactComponent as IconHelpTelegram } from "../../assets/Images/icon-help-telegram.svg";
+import { ReactComponent as IconHelpWhatsapp } from "../../assets/Images/icon-help-whatsapp.svg";
+import { ReactComponent as IconPhone } from "../../assets/Images/icon-help-mobile.svg";
+
 import { ReactComponent as Logoza } from "../../assets/Images/logoza8.svg";
 import { ReactComponent as Location } from "../../assets/Images/location-icon.svg";
 import { ReactComponent as Clock } from "../../assets/Images/clock-icon.svg";
@@ -54,7 +56,7 @@ export const Footer = () => {
 		<div className="footer-background" id="contacts">
 			<div className="footer">
 				<div>
-					<div className="analiz footer-mobile-form">
+					{/* <div className="analiz footer-mobile-form">
 						<p>
 							Получите бесплатный
 							<br /> анализ документов
@@ -73,7 +75,7 @@ export const Footer = () => {
 								</a>
 							</div>
 						</div>
-					</div>
+					</div> */}
 					<div className="analiz footer-desktop-form">
 						<p>
 							Получите бесплатный
@@ -85,44 +87,42 @@ export const Footer = () => {
 						<div className="analiz-arrow-wrapper">
 							<Arrow />
 							<div className="input-wrapper-form input-wrapper-form-desktop">
-							<form onSubmit={onSubmit} className="form-wrapper">
-								<div className="input-text-wrapper">
-									<div>
-										<input
-											type="text"
-											name="message"
-											placeholder="Your Name"
-											value={toSend.message}
-											onChange={handleChange}
-											className="input-mail"
-										/>
-									</div>
-
-									<div>
-										<PhoneInput
-											enableAreaCodeStretch
-											containerClass="container__input"
-											inputClass="input__field"
-											placeholder="+1 (102) 123-4567"
-											inputProps={{
-												name: "phone",
-												required: true,
-												// autoFocus: true,
-												autoFormat: true,
-											}}
-											// onKeyDown={(e) => enterHandler(e)}
-										/>
-									</div>
-								</div>
-
-								<button
-									onClick={() => show("success")}
-									type="submit"
+								<form
+									onSubmit={onSubmit}
+									className="form-wrapper"
 								>
-									Связаться с нами!
-								</button>
-							</form>
-						</div>
+									<div className="input-text-wrapper">
+										<div>
+											<input
+												type="text"
+												name="to_name"
+												placeholder="Введите имя"
+												value={toSend.to_name}
+												onChange={handleChange}
+												className="input-mail"
+											/>
+										</div>
+
+										<div>
+											<input
+												type="number"
+												name="message"
+												placeholder="Введите номер телефона"
+												value={toSend.message}
+												onChange={handleChange}
+												className="input-mail"
+											/>
+										</div>
+									</div>
+
+									<button
+										onClick={() => show("success")}
+										type="submit"
+									>
+										Задать вопрос
+									</button>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>

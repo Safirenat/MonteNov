@@ -1,4 +1,3 @@
-// import logo from "./logo.svg";
 import "./Main.scss";
 
 import "swiper/css/bundle";

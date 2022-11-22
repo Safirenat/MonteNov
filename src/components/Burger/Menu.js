@@ -6,7 +6,6 @@ export const Menu = ({ header, items, active, setActive }) => {
 
 	return (
 		<div className={active ? 'menu active' : 'menu'} onClick={() => setActive(false)}>
-			{/* <div className="blur"></div> */}
 			<div className="menu-content" onClick={e => e.stopPropagation()}>
 				<div className="menu-header">{header}</div>
                 <ul onClick={() => setActive(false)}>
