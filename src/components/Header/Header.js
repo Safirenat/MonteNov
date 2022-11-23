@@ -31,8 +31,7 @@ export const Header = () => {
 
 	const onSubmit = (e) => {
 		e.preventDefault();
-		send("service_n5j4jw9", "template_hs0jgnl", toSend, "EvYP0dyKm3TeaCoHE")
-		// send("service_namoxil", "template_qe62u6w", toSend, "zzIwqvIuqRYdKTPrM")
+		send("service_jx8l5nx", "template_qe62u6w", toSend, "zzIwqvIuqRYdKTPrM")
 			.then((response) => {
 				console.log("SUCCESS!", response.status, response.text);
 				window.location.reload();
@@ -140,7 +139,7 @@ export const Header = () => {
 					<div className="header-center-wrapper">
 						<h2 className="header-center-title">Montenegro Live</h2>
 					</div>
-					{/* <div className="header-bot">
+					<div className="header-bot">
 						<p>
 							ВНЖ Черногории за 30 дней
 							<br /> с полным юридическим
@@ -158,7 +157,7 @@ export const Header = () => {
 								</a>
 							</div>
 						</div>
-					</div> */}
+					</div>
 					<div className="header-bot header-bot-desktop">
 						<p>
 							ВНЖ Черногории за 30 дней
@@ -188,9 +187,9 @@ export const Header = () => {
 										<div>
 											<input
 												type="number"
-												name="message"
+												name="reply_to"
 												placeholder="Введите номер телефона"
-												value={toSend.message}
+												value={toSend.reply_to}
 												onChange={handleChange}
 												className="input-mail"
 											/>
@@ -199,9 +198,9 @@ export const Header = () => {
 										<div>
 											<textarea
 												type="number"
-												name="from_name"
+												name="message"
 												placeholder="Введите вопрос"
-												value={toSend.from_name}
+												value={toSend.message}
 												onChange={handleChange}
 												className="textarea-mail"
 											/>

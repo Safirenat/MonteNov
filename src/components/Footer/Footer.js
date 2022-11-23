@@ -30,7 +30,7 @@ export const Footer = () => {
 
 	const onSubmit = (e) => {
 		e.preventDefault();
-		send("service_exbz4dg", "template_qe62u6w", toSend, "EGF04yEuv7MdmYIlB")
+		send("service_jx8l5nx", "template_qe62u6w", toSend, "zzIwqvIuqRYdKTPrM")
 			.then((response) => {
 				console.log("SUCCESS!", response.status, response.text);
 				window.location.reload();
@@ -84,14 +84,14 @@ export const Footer = () => {
 							<br /> от опытных
 							<br /> юристов Montenegro Live
 						</p>
-						<div className="analiz-arrow-wrapper">
+						<div className="analiz-arrow-wrapper arrow-fix-footer">
 							<Arrow />
 							<div className="input-wrapper-form input-wrapper-form-desktop">
 								<form
 									onSubmit={onSubmit}
 									className="form-wrapper"
 								>
-									<div className="input-text-wrapper">
+									{/* <div className="input-text-wrapper">
 										<div>
 											<input
 												type="text"
@@ -111,6 +111,41 @@ export const Footer = () => {
 												value={toSend.message}
 												onChange={handleChange}
 												className="input-mail"
+											/>
+										</div>
+									</div> */}
+
+									<div className="input-text-wrapper">
+										<div>
+											<input
+												type="text"
+												name="to_name"
+												placeholder="Введите имя"
+												value={toSend.to_name}
+												onChange={handleChange}
+												className="input-mail"
+											/>
+										</div>
+
+										<div>
+											<input
+												type="number"
+												name="reply_to"
+												placeholder="Введите номер телефона"
+												value={toSend.reply_to}
+												onChange={handleChange}
+												className="input-mail"
+											/>
+										</div>
+
+										<div>
+											<textarea
+												type="number"
+												name="message"
+												placeholder="Введите вопрос"
+												value={toSend.message}
+												onChange={handleChange}
+												className="textarea-mail"
 											/>
 										</div>
 									</div>

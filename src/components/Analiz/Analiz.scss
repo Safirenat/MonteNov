@@ -48,10 +48,10 @@
 		padding-top: 50px;
 		flex-direction: column;
 		text-align: center;
-		
-		svg{
-			display: none;
-		}
+
+		// svg {
+		// 	display: none;
+		// }
 	}
 
 	p {
@@ -118,26 +118,27 @@
 }
 
 .analiz-desktop {
-	// @media (max-width: 960px) {
-	// 	display: none;
-	// }
+	@media (max-width: 960px) {
+		display: none;
+	}
 }
 
 .analiz-arrow-wrapper {
 	padding-top: 280px;
 	display: flex;
-	// gap: 20px;
 	gap: 6px;
-	@media (max-width: 550px) {
-		padding-top: 20px;
-	}
+	
 
 	@media (max-width: 960px) {
-		padding-top: 190px;
-		
-		svg{
-			display: none;
-		}
+		padding-top: 40px;
+
+		// svg {
+		// 	display: none;
+		// }
+	}
+
+	@media (max-width: 550px) {
+		padding-top: 20px;
 	}
 }
 
@@ -152,8 +153,8 @@
 	@media (max-width: 960px) {
 		padding-top: 190px;
 		// flex-direction: column;
-		
-		svg{
+
+		svg {
 			display: none;
 		}
 	}
@@ -287,7 +288,7 @@
 		font-family: system-ui;
 	}
 
-	textarea{
+	textarea {
 		height: 50px;
 		width: 230px;
 		padding: 10px;
@@ -296,6 +297,10 @@
 		font-size: 14px;
 		font-family: system-ui;
 		resize: none;
+
+		@media (max-width: 961px) {
+			width: 236px;
+		}
 	}
 }
 

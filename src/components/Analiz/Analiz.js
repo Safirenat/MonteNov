@@ -19,7 +19,7 @@ export const Analiz = () => {
 
 	const onSubmit = (e) => {
 		e.preventDefault();
-		send("service_exbz4dg", "template_qe62u6w", toSend, "EGF04yEuv7MdmYIlB")
+		send("service_jx8l5nx", "template_qe62u6w", toSend, "zzIwqvIuqRYdKTPrM")
 			.then((response) => {
 				console.log("SUCCESS!", response.status, response.text);
 				window.location.reload();
@@ -56,12 +56,12 @@ export const Analiz = () => {
 						<Arrow />
 						<div className="input-wrapper-form input-wrapper-form-desktop">
 							<form onSubmit={onSubmit} className="form-wrapper">
-								<div className="input-text-wrapper">
+								{/* <div className="input-text-wrapper">
 									<div>
 										<input
 											type="text"
 											name="to_name"
-											// placeholder="Your Name"
+											
 											placeholder="Введите имя"
 
 											value={toSend.to_name}
@@ -74,7 +74,7 @@ export const Analiz = () => {
 									<input
 											type="number"
 											name="message"
-											// placeholder="+1 (102) 123-4567"
+										
 											placeholder="Введите номер телефона"
 
 
@@ -82,19 +82,44 @@ export const Analiz = () => {
 											onChange={handleChange}
 											className="input-mail"
 										/>
-										{/* <PhoneInput
-											enableAreaCodeStretch
-											containerClass="container__input"
-											inputClass="input__field"
-											placeholder="+1 (102) 123-4567"
-											inputProps={{
-												name: "phone",
-												required: true,
-												autoFormat: true,
-											}}
-										/> */}
+									
 									</div>
-								</div>
+								</div> */}
+
+								<div className="input-text-wrapper">
+										<div>
+											<input
+												type="text"
+												name="to_name"
+												placeholder="Введите имя"
+												value={toSend.to_name}
+												onChange={handleChange}
+												className="input-mail"
+											/>
+										</div>
+
+										<div>
+											<input
+												type="number"
+												name="reply_to"
+												placeholder="Введите номер телефона"
+												value={toSend.reply_to}
+												onChange={handleChange}
+												className="input-mail"
+											/>
+										</div>
+
+										<div>
+											<textarea
+												type="number"
+												name="message"
+												placeholder="Введите вопрос"
+												value={toSend.message}
+												onChange={handleChange}
+												className="textarea-mail"
+											/>
+										</div>
+									</div>
 
 								<button
 									onClick={() => show("success")}
@@ -108,7 +133,7 @@ export const Analiz = () => {
 				</div>
 
 				<div className="input-wrapper-form-mobile">
-					{/* <div className="analiz">
+					<div className="analiz">
 						<p>
 							Получите бесплатный
 							<br /> анализ документов
@@ -127,7 +152,7 @@ export const Analiz = () => {
 								</a>
 							</div>
 						</div>
-					</div> */}
+					</div>
 				</div>
 			</div>
 		</div>

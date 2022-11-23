@@ -282,11 +282,11 @@
 	// 	padding-top: 30px;
 	// }
 
-	@media (max-width: 960px) {
-		svg {
-			display: none;
-		}
-	}
+	// @media (max-width: 960px) {
+	// 	svg {
+	// 		display: none;
+	// 	}
+	// }
 }
 
 .header-arrow-button {
@@ -374,9 +374,9 @@ svg #wheel {
 
 .header-bot-desktop {
 	display: flex;
-	// @media (max-width: 960px) {
-	// 	display: none;
-	// }
+	@media (max-width: 960px) {
+		display: none;
+	}
 
 	@media (max-width: 960px) {
 		padding-top: 150px;
